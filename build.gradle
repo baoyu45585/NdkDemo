@@ -1,0 +1,58 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.2'
+        
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+//全局控制app版本
+ext {
+    compileSdkVersion = 25
+    buildToolsVersion = "25.0.2"
+    minSdkVersion = 16
+    targetSdkVersion = 25
+    appcompatVersion = "25.3.1"
+
+    constraintLayoutVersion = '1.0.2'
+    easyPermissionsVersion = '0.4.3'
+    loggerVersion = '2.1.1'
+    butterKnifeVersion = '8.8.1'
+
+    multidexVersion = '1.0.1'
+    analyticsVersion = '6.1.2'
+
+    retrofit2Version = '2.3.0'
+    rxandroidVersion = '1.2.1'
+
+    greendaoVersion = '3.2.0'
+    eventbusVersion = '3.0.0'
+    eventbusVersion = '3.0.0'
+    libraryVersion='2.1.3'
+
+    textVersion='2.3.0'
+    glideVersion='4.1.1'
+
+    qiniuVersion = '7.3.+'
+    qiniujavaVersion = '7.1.+'
+}
